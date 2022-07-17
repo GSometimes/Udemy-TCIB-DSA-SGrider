@@ -14,24 +14,29 @@
 // }
 
 // without reverse method
-// function reverse(str) {
-//     // create empty string called 'reversed'
-//     let reversed = ""
+function reverse(str) {
+    // create empty string called 'reversed'
+    let reversed = ""
 
-//     // write a FOR loop to iterate through string and pass characters to the start of the string
-//     for (let character of str) {
-//         reversed = character + reversed;
-//     }
+    // write a FOR loop to iterate through string and pass characters to the start of the string
+    for (let character of str) {
+        reversed = character + reversed;
+        debugger;
+    }
 
-//     // return reversedStr variable
-//     return reversed
-// }
+    // return reversedStr variable
+    return reversed
+}
 
 // with reduce  *fancy solution*
-function reverse(str) {
-  // take str and turn it into array
-  // use reduce method to condense down to single string value
-  return str.split('').reduce((rev, char) => char + rev, '');
-}
+// function reverse(str) {
+//     // debugger statement
+//     // debugger;
+//   // take str and turn it into array
+//   // use reduce method to condense down to single string value
+//   return str.split('').reduce((rev, char) => char + rev, '');
+// }
+
+reverse('asdf') // needed to test debugger 
 
 module.exports = reverse;
